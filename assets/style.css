@@ -1,0 +1,47 @@
+:root {
+  --accent: #b03a2e;
+  --ink: #1d1d1f;
+  --paper: #faf7f2;
+  --card: #ffffff;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+.portal {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 20px 40px;
+  text-align: center;
+}
+.guild {
+  letter-spacing: 0.35em;
+  color: var(--accent);
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+h1 { font-size: 2rem; margin: 0 0 12px; }
+.tagline { line-height: 1.9; color: #444; margin: 0 0 40px; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  text-align: left;
+}
+.card {
+  display: block;
+  background: var(--card);
+  border: 1px solid #e6ded2;
+  border-top: 4px solid var(--accent);
+  border-radius: 10px;
+  padding: 18px 20px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.card:hover { border-color: var(--accent); }
+.card-title { display: block; font-weight: 700; font-size: 1.05rem; margin-bottom: 6px; }
+.card-desc { display: block; font-size: 0.9rem; color: #555; line-height: 1.6; }
+footer { margin-top: 48px; color: #888; font-size: 0.85rem; }
