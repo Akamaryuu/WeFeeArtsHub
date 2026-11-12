@@ -23,7 +23,7 @@ body {
   font-weight: 700;
   margin: 0 0 8px;
 }
-h1 { font-size: 2rem; margin: 0 0 12px; }
+h1 { font-size: 3rem; letter-spacing: 0.04em; margin: 0 0 12px; }
 .tagline { line-height: 1.9; color: #444; margin: 0 0 40px; }
 .cards {
   display: grid;
